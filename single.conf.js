@@ -5,7 +5,7 @@ accessKey=  process.env.LT_ACCESS_KEY,
 exports.config = {
   'specs': ['./specs/single.js'],
 
-  seleniumAddress: 'https://'+ 'jyotiyadav' +':'+ 'LT_QADsSrkYtrtgR0gOQKfoxZuVqQTm1DXlbHy0Vo9JkOzJwpe'  +'@hub.lambdatest.com/wd/hub',
+  seleniumAddress: 'https://'+ '' +':'+ ''  +'@hub.lambdatest.com/wd/hub',
 
   'capabilities': {
     'build': 'protractor-LambdaTest-Single',
