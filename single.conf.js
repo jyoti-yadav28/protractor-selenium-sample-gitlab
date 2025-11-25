@@ -1,11 +1,11 @@
 
-username= process.env.LT_USERNAME || "jyotiyadav",
-accessKey=  process.env.LT_ACCESS_KEY || "LT_QADsSrkYtrtgR0gOQKfoxZuVqQTm1DXlbHy0Vo9JkOzJwpe",
+username= process.env.LT_USERNAME,
+accessKey=  process.env.LT_ACCESS_KEY,
 
 exports.config = {
   'specs': ['./specs/single.js'],
 
-  seleniumAddress: 'https://'+ username +':'+ accessKey  +'@hub.lambdatest.com/wd/hub',
+  seleniumAddress: 'https://'+ "jyotiyadav" +':'+ "LT_QADsSrkYtrtgR0gOQKfoxZuVqQTm1DXlbHy0Vo9JkOzJwpe"  +'@hub.lambdatest.com/wd/hub',
 
   'capabilities': {
     'build': 'protractor-LambdaTest-Single',
