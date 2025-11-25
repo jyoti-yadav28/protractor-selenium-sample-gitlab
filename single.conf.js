@@ -1,6 +1,6 @@
 
-username= process.env.LT_USERNAME || "<your username>",
-accessKey=  process.env.LT_ACCESS_KEY || "<your accessKey>",
+username= process.env.LT_USERNAME || "jyotiyadav",
+accessKey=  process.env.LT_ACCESS_KEY || "LT_QADsSrkYtrtgR0gOQKfoxZuVqQTm1DXlbHy0Vo9JkOzJwpe",
 
 exports.config = {
   'specs': ['./specs/single.js'],
@@ -15,6 +15,7 @@ exports.config = {
     'video': true,
     'network': true,
     'console': true,
+    // 'tunnel' : true,
     'visual': true
   },
   onPrepare: () => {
@@ -35,7 +36,4 @@ exports.config = {
   onComplete: () => {
     browser.quit();
   }
-
-
-
 };

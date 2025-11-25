@@ -2,7 +2,7 @@ image: node:7.10
 
 before_script:
   - |
-    cd /builds/<GIT USER NAME>/protractor-selenium-sample-gitlab
+    # cd /builds/<GIT USER NAME>/protractor-selenium-sample-gitlab
     echo 'export LT_USERNAME="jyotiyadav"' >> ~/.bashrc
     echo 'export LT_ACCESS_KEY="LT_QADsSrkYtrtgR0gOQKfoxZuVqQTm1DXlbHy0Vo9JkOzJwpe"' >> ~/.bashrc
     npm install
