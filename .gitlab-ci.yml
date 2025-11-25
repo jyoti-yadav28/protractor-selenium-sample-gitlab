@@ -1,13 +1,13 @@
-image: node:7.10
+image: node:18
+
+stages:
+  - test
 
 before_script:
-  - |
-    # cd /builds/<GIT USER NAME>/protractor-selenium-sample-gitlab
-    echo 'export LT_USERNAME="jyotiyadav"' >> ~/.bashrc
-    echo 'export LT_ACCESS_KEY="LT_QADsSrkYtrtgR0gOQKfoxZuVqQTm1DXlbHy0Vo9JkOzJwpe"' >> ~/.bashrc
-    npm install
-    npm install -g protractor
-  
-job:
+  - npm install
+  - npm install -g protractor
+
+protractor_job:
+  stage: test
   script:
-    protractor single.conf.js
+    - protractor single.conf.js
